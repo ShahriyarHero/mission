@@ -51,31 +51,12 @@ section {
   width: 1024px;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 20px;
 }
 
 section .wrapper {
-  position: relative;
   align-items: center;
   gap: 50px;
-}
-
-section .wrapper .decoration {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  z-index: -1;
-}
-
-section .wrapper.develop .decoration {
-  left: -100px;
-  top: 20px;
-}
-
-section .wrapper.community .decoration {
-  right: -90px;
-  bottom: -80px;
 }
 
 section .header {
