@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { font-family: 'Poppins', sans-serif }
+a { text-decoration: none }
+.accent { color: #00d4ff}
+.flex { display: flex }
+.flex.reverse { flex-direction: row-reverse }
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background: linear-gradient(to right, #0a61ff 19%, #00d4ff 100%);
+  color: white;
+  cursor: pointer;
+}
+
+.button-group {
+  align-items: center;
+  gap: 10px;
+}
+
+.button-group .icons {
+  gap: 5px;
+}
+
+.button-group .icons i {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  padding: 5px;
+  background: #0a61ff;
+  border-radius: 50%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 1024px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section .wrapper {
+  position: relative;
+  align-items: center;
+  gap: 50px;
+}
+
+section .wrapper .decoration {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: -1;
+}
+
+section .wrapper.develop .decoration {
+  left: -100px;
+  top: 20px;
+}
+
+section .wrapper.community .decoration {
+  right: -90px;
+  bottom: -80px;
+}
+
+section .header {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+section .content { flex: 1.5 }
+section .content .headings { margin-bottom: 20px }
+
+section .content .headings h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+section .content .headings h1:last-child { margin-top: 10px }
+
+section .content .headings.big h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+section .content .headings.left-bar {
+  padding-left: 10px;
+  border-left: 3px solid #0a61ff;
+}
+
+section .content .description { margin-bottom: 10px}
+
+section .content .notice {
+  font-size: 15px;
+  color: gray;
+  margin-top: 20px;
+}
+
+section .image { flex: 1 }
+
+section .image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+}
+
+section .image img.rounded { border-radius: 50% }
+
+section .image img.screenshot {
+  width: auto;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: #00000059 0px 5px 15px;
+}
+
+section .cards {
+  display: flex;
+  gap: 30px;
+}
+
+section .cards .card {
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+section .cards .card:hover { box-shadow: #0000003d 0px 3px 8px }
+section .cards .card.one   { background: #e3c4ffaf }
+section .cards .card.two   { background: #aee1ffaf }
+section .cards .card.three { background: #ffa571af }
+
+section .cards .card img {
+  width: 140px;
+  height: 140px;
+}
+
+section .cards .card h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+section .cards .card p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section.contact { margin-bottom: 100px }
+section.contact .content { width: 80%; }
+section.contact .image img { box-shadow: none }
+
+section form { margin-bottom: 30px }
+section form .inputs { gap: 30px }
+
+section form .field {
+  flex: 1;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.field > input, textarea {
+  margin-top: 10px;
+  padding: 5px;
+  outline: none;
+  font-family: 'Poppins';
+}
+
+.field textarea {
+  height: 150px;
+  resize: none;
+}
+
+footer {
+  text-align: center;
+  background: #353535;
+  color: white;
+  padding: 20px 0;
+}
+
+footer h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #cacaca;
+}
